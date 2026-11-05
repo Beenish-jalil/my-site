@@ -800,4 +800,71 @@ ul { margin: 0; padding: 0; list-style: none; }
 .tile--deep { background: linear-gradient(135deg, #7DA6A9, #2D4642); }
 
 .section__sub--wide { max-width: 48rem; }
+.page-hero--short { min-height: 50vh; }
+.narrow { max-width: 56rem; margin: 0 auto; }
+.center { margin-top: 3rem; text-align: center; }
+
+/* ---------- fees ---------- */
+.card--fee {
+  overflow: hidden;
+  background: linear-gradient(135deg, #fff, #F9FAFB);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
+}
+.card--fee:hover { transform: translateY(-8px); box-shadow: 0 26px 48px rgba(0, 0, 0, .18); }
+.fee { padding: 1.5rem; text-align: center; }
+.fee__name { font-size: 1.25rem; font-weight: 700; color: var(--ink); margin-bottom: .5rem; }
+.fee__detail { color: var(--ink-mute); margin-bottom: 1rem; }
+.fee__amount { font-size: 1.5rem; font-weight: 700; color: var(--brass); }
+
+.banner {
+  margin-top: 4rem;
+  padding: 2rem;
+  border-radius: var(--r-card);
+  background: linear-gradient(135deg, #9D7438, #7DA6A9);
+  color: #fff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, .2);
+}
+@media (min-width: 768px) { .banner { padding: 2.5rem; } }
+.banner__row { display: flex; flex-direction: column; gap: 1.5rem; }
+@media (min-width: 768px) { .banner__row { flex-direction: row; align-items: center; } }
+.banner__icon {
+  width: 3.5rem; height: 3.5rem;
+  flex: 0 0 auto;
+  border-radius: .75rem;
+  background: rgba(255, 255, 255, .2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner__icon .ico { width: 1.75rem; height: 1.75rem; color: #fff; }
+.banner__body { flex: 1; }
+.banner__title { font-size: 1.5rem; font-weight: 700; margin-bottom: .5rem; }
+.banner__text { font-size: 1.125rem; color: rgba(255, 255, 255, .9); line-height: 1.7; }
+.banner__cta { flex: 0 0 auto; }
+
+.card--info {
+  background: #fff;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
+}
+.icon-row { display: flex; align-items: flex-start; gap: 1.5rem; padding: 2rem; }
+.icon-row__title { font-size: 1.5rem; font-weight: 700; color: var(--ink); margin-bottom: .75rem; }
+.icon-row__text { color: #374151; line-height: 1.7; }
+
+/* ---------- faq ---------- */
+.faq-list { display: grid; gap: 1.5rem; }
+.card--faq {
+  background: linear-gradient(135deg, #fff, #F9FAFB);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
+}
+.faq-row { display: flex; align-items: flex-start; gap: 1.5rem; padding: 2rem; }
+.faq__q { font-size: 1.25rem; font-weight: 700; color: var(--ink); margin-bottom: .5rem; }
+.faq__a { color: #374151; line-height: 1.7; }
+
+.tile--sq-sm {
+  width: 3.5rem; height: 3.5rem;
+  margin: 0;
+  border-radius: 1rem;
+  flex: 0 0 auto;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .18);
+}
 
