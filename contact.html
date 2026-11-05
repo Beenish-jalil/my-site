@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Contact Heart to Soul Psychotherapy for individual therapy, family therapy, parental consultation and a free consultation request.">
+<title>Contact | Heart to Soul Psychotherapy</title>
+<style>
+  :root{--ink:#0b1a31;--gold:#a47835;--rust:#e9774f;--teal:#7fa4a5;--forest:#3f625e;--paper:#fcf6f0;--muted:#4e6171}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+  a{color:inherit}
+  button,input,select,textarea{font:inherit}
+  button{cursor:pointer}
+  :is(a,button,input,select,textarea):focus-visible{outline:3px solid #e9774f;outline-offset:3px}
+  .site-header{position:sticky;top:0;z-index:10;background:#faf1e8;box-shadow:0 1px 3px rgba(47,33,20,.09)}
+  .header-inner{max-width:1200px;min-height:93px;margin:auto;padding:11px 42px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none;min-width:0}
+  .brand-img{width:56px;height:56px;flex:0 0 56px;border-radius:50%;object-fit:cover;box-shadow:0 3px 10px rgba(86,72,42,.13)}
+  .brand-title{display:block;font-size:20px;color:#a77933;font-weight:750;line-height:1.24;white-space:nowrap}
+  .brand-subtitle{display:block;font-size:13.7px;color:#ac7a4d;line-height:1.4;margin-top:3px;white-space:nowrap}
+  .site-nav{display:flex;align-items:center;gap:26px;white-space:nowrap}
+  .site-nav a{text-decoration:none;color:#ac7b35;font-size:15px;font-weight:550}
+  .site-nav a:hover,.site-nav a[aria-current=page]{color:#0b1a31}
+  .site-nav .nav-book{font-size:13px;font-weight:700;color:white;border-radius:5px;background:linear-gradient(105deg,#ed7b51,#a77b37);padding:11px 14px;box-shadow:0 6px 14px rgba(141,93,39,.15)}
+  .site-nav .nav-book:hover{color:#fff;filter:brightness(.97)}
+  .hero{position:relative;background:linear-gradient(90deg,rgba(57,57,39,.65),rgba(123,80,36,.58)),url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1600&q=80') center 50%/cover;min-height:262px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+  .hero-inner{width:100%;padding:49px 20px 55px}
+  .hero h1{font-size:clamp(2.2rem,5.25vw,3.55rem);margin:0 0 9px;font-weight:800;letter-spacing:-.025em;line-height:1.26;text-shadow:0 1px 2px rgba(0,0,0,.11)}
+  .hero p{font-size:clamp(1.05rem,2.15vw,1.5rem);margin:8px 0 0;color:#fff;font-weight:500}
+  .contact-section{background:linear-gradient(115deg,#fefbf8 0%,#f9f1e9 58%,#f4e9dd 100%);padding:80px 0 88px}
+  .container{max-width:1200px;margin:0 auto;padding:0 42px}
+  .contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:47px;align-items:start}
+  .intro h2{font-size:36px;line-height:1.2;margin:0 0 15px;font-weight:750;letter-spacing:-.045em}
+  .intro p{font-size:17px;line-height:1.78;margin:0 0 30px;max-width:530px;color:#263d50}
+  .info-cards{display:grid;gap:23px}
+  .info-card{display:flex;align-items:center;gap:17px;min-height:96px;padding:21px 24px;border-radius:13px;background:#fff;box-shadow:0 13px 24px rgba(31,35,32,.12)}
+  .info-icon{width:49px;height:49px;flex:0 0 49px;border-radius:12px;background:linear-gradient(140deg,#eb8056,#a77b36);display:grid;place-items:center;color:#fff}
+  .info-icon.phone{background:linear-gradient(140deg,#85aeb0,#365a57)}
+  .info-icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .info-card .info-text{font-size:14px;font-weight:650;line-height:1.6;overflow-wrap:anywhere}
+  .info-card a{text-decoration:none}
+  .info-card a:hover{text-decoration:underline}
+  .card-rule{border:0;border-top:3px solid #e9dfd5;margin:2px 0 0}
+  .hours{margin-top:-3px;border-radius:12px;color:white;padding:21px 24px 23px;background:linear-gradient(120deg,#a47835,#7fa4a5);box-shadow:0 12px 26px rgba(39,41,34,.14)}
+  .hours h3{font-size:20px;margin:0 0 11px;font-weight:750}
+  .hours p{margin:7px 0;font-size:15px;color:#fff}
+  .form-card{background:#fff;border-radius:14px;padding:32px 32px 35px;box-shadow:0 18px 32px rgba(46,37,27,.13)}
+  .form-card h2{font-weight:750;font-size:30px;line-height:1.25;margin:0 0 7px;letter-spacing:-.025em}
+  .form-lead{font-size:15px;line-height:1.6;color:#586879;margin:0 0 26px}
+  .field{margin-bottom:22px}
+  .field label{display:block;color:#0c1d32;font-weight:650;font-size:14px;margin:0 0 9px}
+  .field :is(input,select,textarea){display:block;width:100%;padding:9px 12px;border:1px solid #e5d8ca;color:#152c3e;border-radius:6px;box-shadow:0 1px 2px rgba(51,40,30,.04);background:#fff;font-size:14px}
+  .field input,.field select{height:38px}
+  .field textarea{min-height:135px;resize:vertical}
+  .field :is(input,select,textarea)::placeholder{color:#8da1a4;opacity:1}
+  .field select:invalid{color:#738a8e}
+  .field select option{color:#102135}
+  .field :is(input,select,textarea):focus{border-color:#a1c1c0;outline:2px solid #b9d2d0;outline-offset:1px}
+  .field-hint{font-size:12px;line-height:1.55;color:#60717c;margin:8px 0 0}
+  .form-submit{border:0;width:100%;border-radius:7px;padding:13px 18px;display:flex;gap:9px;justify-content:center;align-items:center;color:#fff;font-size:16px;font-weight:700;background:linear-gradient(95deg,#a47835,#7fa4a5);box-shadow:0 6px 16px rgba(67,79,67,.13)}
+  .form-submit svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .form-submit:hover{filter:brightness(.96)}
+  .form-note{font-size:12px;color:#66747d;text-align:center;line-height:1.65;margin:14px 0 0}
+  .form-feedback{display:none;padding:12px 14px;background:#f2f8f5;color:#2f5644;border:1px solid #bbd8c9;border-radius:8px;margin:14px 0 0;font-size:13px}
+  .what-next{background:#fff;text-align:center;padding:73px 0 82px}
+  .what-next h2{font-size:33px;letter-spacing:-.02em;line-height:1.2;margin:0 0 42px}
+  .step-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+  .step-num{width:66px;height:66px;border-radius:50%;margin:0 auto 15px;display:grid;place-items:center;color:white;font-size:25px;font-weight:700;background:linear-gradient(140deg,#ed7b51,#a77b36);box-shadow:0 10px 18px #a477342a}
+  .step h3{font-size:19px;margin:0 0 5px}.step p{font-size:15px;color:#566674;max-width:280px;margin:0 auto}
+  .cta{background:linear-gradient(105deg,#a47835,#e9774f,#7fa4a5);color:white;padding:74px 0 83px;text-align:center}
+  .cta h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.025em;margin:0 0 18px;line-height:1.2}
+  .cta p{font-size:18px;max-width:770px;margin:0 auto 26px;line-height:1.6}
+  .cta a{display:inline-block;background:#fff;color:#34534e;font-weight:750;text-decoration:none;padding:14px 25px;border-radius:7px;box-shadow:0 7px 16px #0002}
+  .footer{background:#304b47;color:#f6f5f3;text-align:center;padding:24px 20px;font-size:13px}
+  .footer p{margin:0}
+  .back-top{position:fixed;right:22px;bottom:22px;z-index:12;width:43px;height:43px;border:0;border-radius:50%;background:#476c66;color:#fff;font-size:24px;opacity:0;pointer-events:none;box-shadow:0 5px 17px #0003;transition:opacity .2s}
+  .back-top.visible{opacity:1;pointer-events:auto}
+  @media(max-width:1080px){.header-inner{flex-wrap:wrap;justify-content:center;padding:11px 25px}.site-nav{gap:18px}.container{padding:0 34px}.contact-grid{gap:35px}.form-card{padding:27px}.brand-title{font-size:19px}}
+  @media(max-width:760px){.header-inner{min-height:auto}.site-nav{gap:14px;justify-content:center;flex-wrap:wrap}.site-nav a{font-size:14px}.site-nav .nav-book{font-size:12px}.contact-grid{grid-template-columns:1fr;gap:32px}.contact-section{padding:50px 0 66px}.hero{min-height:220px}.hero h1{font-size:clamp(30px,5.7vw,48px)}.intro p{margin-bottom:23px}.step-grid{grid-template-columns:1fr;gap:38px}.what-next{padding:62px 0}.form-card{padding:28px}.cta{padding:60px 0}}
+  @media(max-width:480px){.container{padding:0 19px}.header-inner{padding:12px 10px}.brand{gap:10px}.brand-img{width:49px;height:49px;flex-basis:49px}.brand-title{font-size:17px}.brand-subtitle{font-size:12px}.site-nav{gap:9px 13px}.site-nav a{font-size:12px}.site-nav .nav-book{padding:8px 9px}.intro h2{font-size:31px}.info-card{padding:18px}.form-card{padding:22px}.form-card h2{font-size:25px}.hero-inner{padding:43px 14px}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.back-top{transition:none}}
+</style>
+</head>
+<body>
+<header class="site-header">
+ <div class="header-inner">
+  <a href="index.html" class="brand" aria-label="Heart to Soul Psychotherapy home">
+   <img class="brand-img" alt="Heart to Soul Psychotherapy logo" src="data:image/png;base64,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">
+   <span><span class="brand-title">Heart To Soul Psychotherapy</span><span class="brand-subtitle">Mental Health &amp; Wellness</span></span>
+  </a>
+  <nav class="site-nav" aria-label="Main navigation">
+   <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="fees.html">Fees</a><a href="faq.html">FAQ</a><a href="contact.html" aria-current="page">Contact</a><a href="contact.html#consultation-form" class="nav-book">Book free Consultation</a>
+  </nav>
+ </div>
+</header>
+<main>
+ <section class="hero" aria-label="Heart to Soul Psychotherapy">
+  <div class="hero-inner"><h1>Heart to Soul Psychotherapy</h1><p>Start your journey to better mental health today</p></div>
+ </section>
+ <section class="contact-section" aria-label="Contact information and consultation request">
+  <div class="container contact-grid">
+   <div>
+    <div class="intro"><h2>Let's Connect</h2><p>Taking care of your mental health takes courage and strength. We're here to support you every step of the way. Contact us today for a free consultation.</p></div>
+    <div class="info-cards">
+     <div class="info-card"><span class="info-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span><span class="info-text">Email: <a href="mailto:s.beenishjalil@gmail.com">s.beenishjalil@gmail.com</a></span></div>
+     <div class="info-card"><span class="info-icon phone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 16.6v2.7a2 2 0 0 1-2.2 2A19 19 0 0 1 2.7 5.2 2 2 0 0 1 4.7 3h2.7a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 2.9a2 2 0 0 1-.5 2.1l-1.3 1.3a15.5 15.5 0 0 0 4.7 4.7l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.9.6 2.9.7a2 2 0 0 1 1.7 1.7Z"/></svg></span><span class="info-text">Call Us <a href="tel:+14166880131">416-688-0131</a></span></div>
+     <hr class="card-rule">
+     <div class="hours"><h3>Office Hours</h3><p>Monday - Friday: 9:00 AM - 6:00 PM</p><p>Saturday &amp; Sunday: By Appointment</p></div>
+    </div>
+   </div>
+   <div class="form-card" id="consultation-form">
+    <h2>Book Your Free Consultation</h2>
+    <p class="form-lead">Fill out the form below and we'll get back to you within 24 hours</p>
+    <form id="contact-form">
+     <div class="field"><label for="name">Full Name *</label><input id="name" name="name" type="text" autocomplete="name" maxlength="120" placeholder="John Doe" required></div>
+     <div class="field"><label for="email">Email Address *</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="john@example.com" required></div>
+     <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="40" placeholder="(123) 456-7890"></div>
+     <div class="field"><label for="service">Service Interest *</label><select id="service" name="service" required><option value="" disabled selected>Select a service</option><option>Individual Therapy</option><option>Family Therapy</option><option>Parental Consultation</option><option>Community Programs</option><option>Organizational Support</option><option>Not Sure / General Inquiry</option></select></div>
+     <div class="field"><label for="message">Message *</label><textarea id="message" name="message" placeholder="Tell us a bit about what brings you here today..." maxlength="750" required></textarea><p class="field-hint">Please avoid including sensitive health details in this initial message.</p></div>
+     <button class="form-submit" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7ZM22 2 11 13"/></svg>Prepare Email to Send</button>
+     <p class="form-note">This free version opens an email draft. You must press <strong>Send</strong> in your email app to submit your request. Please review our privacy policy before sharing personal information.</p>
+     <div class="form-feedback" id="form-feedback" role="status" aria-live="polite">An email draft should open in your email app. Please press <strong>Send</strong> there to finish. If nothing opens, email <a href="mailto:s.beenishjalil@gmail.com">s.beenishjalil@gmail.com</a> directly.</div>
+    </form>
+   </div>
+  </div>
+ </section>
+ <section class="what-next"><div class="container"><h2>What Happens Next?</h2><div class="step-grid">
+  <div class="step"><div class="step-num">1</div><h3>We'll Review Your Request</h3><p>We'll carefully review your message and service needs</p></div>
+  <div class="step"><div class="step-num">2</div><h3>Initial Consultation</h3><p>We'll schedule a free consultation to discuss your goals</p></div>
+  <div class="step"><div class="step-num">3</div><h3>Begin Your Journey</h3><p>Start working together on your path to wellness</p></div>
+ </div></div></section>
+ <section class="cta"><div class="container"><h2>Ready to Start Your Journey?</h2><p>Taking care of your mental health takes courage and strength. We're here to support you every step of the way. Contact us today for a free consultation.</p><a href="#consultation-form">Book Free Consultation →</a></div></section>
+</main>
+<footer class="footer"><p>© <span id="current-year">2026</span> Heart to Soul Psychotherapy. All rights reserved.</p></footer>
+<button class="back-top" id="back-top" aria-label="Back to top" type="button">↑</button>
+<script>
+(function(){
+ document.getElementById('current-year').textContent=new Date().getFullYear();
+ const up=document.getElementById('back-top');
+ window.addEventListener('scroll',()=>up.classList.toggle('visible',window.scrollY>480),{passive:true});
+ up.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+ document.getElementById('contact-form').addEventListener('submit',function(event){
+  event.preventDefault();if(!this.reportValidity())return;
+  const data=new FormData(this);
+  const body=['Name: '+data.get('name'),'Email: '+data.get('email'),'Phone: '+(data.get('phone')||'Not provided'),'Service Interest: '+data.get('service'),'','Message:',data.get('message')].join('\n');
+  const subject='Free Consultation Request - '+data.get('name');
+  document.getElementById('form-feedback').style.display='block';
+  window.location.href='mailto:s.beenishjalil@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+ });
+})();
+</script>
+</body>
+</html>
