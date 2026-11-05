@@ -83,4 +83,47 @@
       item.classList.add("is-visible");
     });
   }
+
+  /* ---------- services tabs (deep-linkable via ?tab=) ---------- */
+  var tabs = document.querySelectorAll(".tab");
+
+  if (tabs.length) {
+    var panels = document.querySelectorAll(".tabpanel");
+
+    function showTab(name, push) {
+      var found = false;
+
+      tabs.forEach(function (tab) {
+        var active = tab.getAttribute("data-tab") === name;
+        if (active) found = true;
+        tab.classList.toggle("is-active", active);
+        tab.setAttribute("aria-selected", active ? "true" : "false");
+      });
+
+      if (!found) return;
+
+      panels.forEach(function (panel) {
+        var active = panel.id === "panel-" + name;
+        panel.classList.toggle("is-active", active);
+        if (active) {
+          panel.removeAttribute("hidden");
+        } else {
+          panel.setAttribute("hidden", "");
+        }
+      });
+
+      if (push && window.history.replaceState) {
+        window.history.replaceState(null, "", "?tab=" + name + window.location.hash);
+      }
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        showTab(tab.getAttribute("data-tab"), true);
+      });
+    });
+
+    var requested = new URLSearchParams(window.location.search).get("tab");
+    showTab(requested || "individual", false);
+  }
 })();
