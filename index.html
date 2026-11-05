@@ -1,13 +1,314 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Base44 APP</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Heart to Soul Psychotherapy | Mental Health &amp; Wellness</title>
+<meta name="description" content="Professional mental health and wellness consulting services for individuals, communities, and organizations. Virtual therapy, community programs, and parental consultation." />
+<meta name="keywords" content="mental health, therapy, counselling, psychotherapy, virtual therapy, family therapy, parental consultation, Mississauga, Ontario" />
+<meta property="og:title" content="Heart to Soul Psychotherapy | Mental Health &amp; Wellness" />
+<meta property="og:description" content="A safe space for individuals &amp; families to heal &amp; grow." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Albert+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="header" id="header">
+  <div class="header__inner wrap">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="https://media.base44.com/images/public/6a3c726082ebc5ae97b9e54c/86b9ad87b_WhatsAppImage2026-06-24at81843PM.jpeg" alt="Heart To Soul Psychotherapy logo" />
+      <span class="brand__text">
+        <span class="brand__name">Heart To Soul Psychotherapy</span>
+        <span class="brand__tag">Mental Health &amp; Wellness</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <a class="nav__link is-active" href="index.html">Home</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__link" href="services.html">Services</a>
+      <a class="nav__link" href="fees.html">Fees</a>
+      <a class="nav__link" href="faq.html">FAQ</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+      <a class="btn btn--brass nav__cta" href="contact.html">Book free Consultation</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile" id="mobileMenu">
+    <nav class="mobile__nav" aria-label="Mobile">
+      <a class="mobile__link is-active" href="index.html">Home</a>
+      <a class="mobile__link" href="about.html">About</a>
+      <a class="mobile__link" href="services.html">Services</a>
+      <a class="mobile__link" href="fees.html">Fees</a>
+      <a class="mobile__link" href="faq.html">FAQ</a>
+      <a class="mobile__link" href="contact.html">Contact</a>
+      <a class="btn btn--brass mobile__cta" href="contact.html">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content wrap">
+      <h1 class="hero__title">Heart To Soul<br />Psychotherapy</h1>
+      <p class="hero__sub">A safe space for individuals &amp; families to heal &amp; grow.</p>
+      <div class="hero__actions">
+        <a class="btn btn--light btn--hero" href="contact.html">
+          <span class="hide-sm">Book Free Consultation</span>
+          <span class="show-sm">Book free consultation</span>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn--light btn--hero" href="services.html">
+          Explore Services
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== My Approach ===== -->
+  <section class="section section--white">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <h2 class="section__title">My Approach</h2>
+        <p class="section__sub">Built on principles of safety, empowerment, and collaboration</p>
+      </div>
+
+      <div class="grid grid--4">
+        <article class="card card--soft reveal" style="transition-delay:0s">
+          <div class="tile tile--1">
+            <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+          </div>
+          <h3 class="card__title">Safe Space</h3>
+          <p class="card__text">I create a safe, inclusive space for people to connect, be heard and feel valued.</p>
+        </article>
+
+        <article class="card card--soft reveal" style="transition-delay:.1s">
+          <div class="tile tile--2">
+            <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3 class="card__title">No Judgement</h3>
+          <p class="card__text">I hold space for people to explore their experiences with curiosity and discovery.</p>
+        </article>
+
+        <article class="card card--soft reveal" style="transition-delay:.2s">
+          <div class="tile tile--3">
+            <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5C17.5 10.6 18 9.3 18 8A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+          </div>
+          <h3 class="card__title">Empower</h3>
+          <p class="card__text">I build on existing strengths and provide resources and tools to facilitate growth.</p>
+        </article>
+
+        <article class="card card--soft reveal" style="transition-delay:.3s">
+          <div class="tile tile--4">
+            <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 14.5 8.4 11.9a2.1 2.1 0 0 1 3-3l1.6 1.6 1.6-1.6a2.1 2.1 0 0 1 3 3L15 14.5"/><path d="M2 17.5c2.2-1.6 4.4-1.6 6.6 0"/><path d="M22 17.5c-2.2-1.6-4.4-1.6-6.6 0"/><path d="M7 20.5c3.3 1.4 6.7 1.4 10 0"/></svg>
+          </div>
+          <h3 class="card__title">Support</h3>
+          <p class="card__text">I work together with you in partnership to build trust in relationship.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="section section--cream">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <h2 class="section__title">Services</h2>
+        <p class="section__sub">Comprehensive mental health support tailored to your needs</p>
+      </div>
+
+      <div class="grid grid--4">
+
+        <article class="card card--service reveal" style="transition-delay:0s">
+          <div class="card__bar card__bar--orange"></div>
+          <div class="card__body">
+            <img class="card__img" src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68fa7b7f8927b67051a8135a/2fec357ad_AdobeStock_1526421917.jpg" alt="Adult/Teen Psychotherapy" />
+            <h3 class="card__h3">Adult/Teen Psychotherapy</h3>
+            <p class="card__text">One-on-one support for youth and adults experiencing life stressors, anxiety, depression, history of trauma or relationship issues.</p>
+            <ul class="ticks">
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>60-minute sessions</span></li>
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Confidential and non judgemental space</span></li>
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Coping strategies &amp; tools</span></li>
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Trauma-informed care</span></li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="services.html?tab=individual">Learn More
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card card--service reveal" style="transition-delay:.15s">
+          <div class="card__bar card__bar--teal"></div>
+          <div class="card__body">
+            <img class="card__img" src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68fa7b7f8927b67051a8135a/e5dce98c1_LogosGroupWorkshop.jpg" alt="Community Programs" />
+            <h3 class="card__h3">Community Programs</h3>
+            <p class="card__text">Workshops and group sessions addressing mental health barriers and building community resilience.</p>
+            <ul class="ticks">
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Group workshops</span></li>
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Self-care strategies</span></li>
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Stress management</span></li>
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Trauma &amp; recovery</span></li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="services.html?tab=community">Learn More
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card card--service reveal" style="transition-delay:.3s">
+          <div class="card__bar card__bar--gold"></div>
+          <div class="card__body">
+            <img class="card__img" src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68fa7b7f8927b67051a8135a/88d28faab_AdobeStock_246220506.jpg" alt="Parental Consultation" />
+            <h3 class="card__h3">Parental Consultation</h3>
+            <p class="card__text">Consultation for both new and experienced parents.</p>
+            <ul class="ticks">
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Pre and post partum care</span></li>
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Parental coaching</span></li>
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Primary care provider support</span></li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="services.html?tab=parental">Learn More
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card card--service reveal" style="transition-delay:.45s">
+          <div class="card__bar card__bar--mint"></div>
+          <div class="card__body">
+            <img class="card__img" src="https://media.base44.com/images/public/6a3c726082ebc5ae97b9e54c/29dc37629_ChatGPT_Image_Aug_23__2026__09_29_58_PM.png" alt="Family Psychotherapy" />
+            <h3 class="card__h3">Family Psychotherapy</h3>
+            <p class="card__text">Virtual family sessions to improve communication, resolve conflict, and strengthen relationships together.</p>
+            <ul class="ticks">
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>60-minute sessions</span></li>
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Improved communication</span></li>
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Conflict resolution</span></li>
+              <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Stronger family bonds</span></li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="services.html?tab=family">Learn More
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Areas of Support ===== -->
+  <section class="section section--cream">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <h2 class="section__title">Areas of Support</h2>
+        <p class="section__sub">Compassionate care across a range of life experiences</p>
+      </div>
+      <div class="pills reveal">
+        <span class="pill">Anxiety</span>
+        <span class="pill">Depression</span>
+        <span class="pill">Trauma</span>
+        <span class="pill">Phobias</span>
+        <span class="pill">Relationship Issues</span>
+        <span class="pill">Grief</span>
+        <span class="pill">Growth and Healing</span>
+      </div>
+      <p class="languages">Therapy provided in English, Urdu and Hindi</p>
+    </div>
+  </section>
+
+  <!-- ===== About preview ===== -->
+  <section class="section section--white">
+    <div class="wrap">
+      <div class="about">
+        <div class="about__media reveal">
+          <img src="https://media.base44.com/images/public/6a3c726082ebc5ae97b9e54c/a096285d2_WhatsApp_Image_2026-11-02_at_104105_AM.jpeg" alt="Beenish Jalil" />
+        </div>
+        <div class="about__body reveal">
+          <h2 class="section__title section__title--left">Meet Beenish Jalil</h2>
+          <p class="about__role">Registered Psychotherapist (Q)</p>
+          <p class="about__text">I am Beenish, a registered psychotherapist (Q) dedicated to providing a safe and supportive space where you can feel heard and understood. I work with children, adults and families experiencing stress, anxiety, trauma, relationship challenges, grief and self esteem issues. I provide Trauma informed care and work with modalities such as CBT, DBT, mindfulness, somatic approach, psychodynamic psychotherapy and solution focused therapy.</p>
+          <p class="about__text">I believe that every person has the capacity for growth and healing, and I strive to help my clients work through their challenges, heal and grow. I offer therapy in English, Urdu and Hindi. I look forward to supporting you on your journey towards emotional well being.</p>
+          <a class="btn btn--brass btn--lg" href="about.html">Learn More About Beenish
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="cta__glow cta__glow--left"></div>
+    <div class="cta__glow cta__glow--right"></div>
+    <div class="cta__inner wrap reveal">
+      <h2 class="cta__title">Ready to Start Your Journey?</h2>
+      <p class="cta__text">Taking care of your mental health takes courage. You are not alone. Contact me today for a free consultation.</p>
+      <a class="btn btn--light btn--lg" href="contact.html">Book Your Free 15 Minute Consultation
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img src="https://media.base44.com/images/public/6a3c726082ebc5ae97b9e54c/86b9ad87b_WhatsAppImage2026-06-24at81843PM.jpeg" alt="Heart To Soul Psychotherapy logo" />
+          <div>
+            <h3>Heart to Soul Psychotherapy</h3>
+            <p>Mental Health &amp; Wellness</p>
+          </div>
+        </div>
+        <p class="footer__about">Empowering individuals, families and communities with practical mental health support.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="fees.html">Fees</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4>Contact Info</h4>
+        <div class="footer__contact">
+          <a href="mailto:s.beenishjalil@gmail.com">s.beenishjalil@gmail.com</a>
+          <a href="tel:+14166880131">(416) 688 0131</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Heart To Soul Psychotherapy. OCN/BIN 100816670. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
 </html>
