@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Our Services | Heart to Soul Psychotherapy</title>
+<meta name="description" content="Individual therapy, community programs, parental consultation and family psychotherapy. Virtual sessions available across Canada." />
+<meta property="og:title" content="Our Services | Heart to Soul Psychotherapy" />
+<meta property="og:description" content="Comprehensive mental health support for individuals, families, and organizations." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Albert+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="header__inner wrap">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="https://media.base44.com/images/public/6a3c726082ebc5ae97b9e54c/86b9ad87b_WhatsAppImage2026-06-24at81843PM.jpeg" alt="Heart To Soul Psychotherapy logo" />
+      <span class="brand__text">
+        <span class="brand__name">Heart To Soul Psychotherapy</span>
+        <span class="brand__tag">Mental Health &amp; Wellness</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__link is-active" href="services.html">Services</a>
+      <a class="nav__link" href="fees.html">Fees</a>
+      <a class="nav__link" href="faq.html">FAQ</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+      <a class="btn btn--brass nav__cta" href="contact.html">Book free Consultation</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile" id="mobileMenu">
+    <nav class="mobile__nav" aria-label="Mobile">
+      <a class="mobile__link" href="index.html">Home</a>
+      <a class="mobile__link" href="about.html">About</a>
+      <a class="mobile__link is-active" href="services.html">Services</a>
+      <a class="mobile__link" href="fees.html">Fees</a>
+      <a class="mobile__link" href="faq.html">FAQ</a>
+      <a class="mobile__link" href="contact.html">Contact</a>
+      <a class="btn btn--brass mobile__cta" href="contact.html">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Page hero ===== -->
+  <section class="page-hero">
+    <div class="page-hero__bg" style="background-image:url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68fa7b7f8927b67051a8135a/a8b1f9ee3_AdobeStock_246220506.jpg')"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <h1 class="page-hero__title">Heart to Soul Psychotherapy</h1>
+      <p class="page-hero__sub">Comprehensive mental health support for individuals, families, and organizations</p>
+    </div>
+  </section>
+
+  <!-- ===== Services tabs ===== -->
+  <section class="section section--white">
+    <div class="wrap">
+      <div class="tabs">
+
+        <div class="tablist" role="tablist" aria-label="Services">
+          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-individual" id="tab-individual" data-tab="individual">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+            Individual Therapy
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-community" id="tab-community" data-tab="community">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Community Programs
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-parental" id="tab-parental" data-tab="parental">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+            Parental Consultation
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-family" id="tab-family" data-tab="family">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Family Psychotherapy
+          </button>
+        </div>
+
+        <!-- Individual Therapy -->
+        <div class="tabpanel is-active" id="panel-individual" role="tabpanel" aria-labelledby="tab-individual">
+
+          <div class="split split--service reveal">
+            <div>
+              <img class="rounded-img" src="https://media.base44.com/images/public/6a3c726082ebc5ae97b9e54c/23da179de_ChatGPT_Image_Aug_24__2026__06_01_16_PM.png" alt="Individual Therapy" />
+            </div>
+            <div class="split__body">
+              <h2 class="h2-page">Adult/Teen Psychotherapy</h2>
+              <p class="lead">I offer compassionate, culturally responsive, and trauma-informed therapy for adults, teens, children, couples and families. My approach is warm, collaborative, and tailored to each client, drawing from CBT, DBT, mindfulness, solution-focused, somatic, and strength-based approaches. I provide therapy in English, Urdu, and Hindi and can incorporate cultural and spiritual perspectives when meaningful to the client.</p>
+              <div class="tags">
+                <span class="tag">Anxiety</span>
+                <span class="tag">Depression</span>
+                <span class="tag">Burnout</span>
+                <span class="tag">Trauma</span>
+                <span class="tag">Grief &amp; Loss</span>
+                <span class="tag">Relationships</span>
+              </div>
+              <a class="text-link" href="contact.html">Book Free Consultation</a>
+            </div>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="info reveal">
+              <div class="info__head">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                <h3 class="info__title">What to Expect</h3>
+              </div>
+              <div class="info__row">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+                <div>
+                  <strong>Sessions</strong>
+                  <p>60 minutes in length, held in a secure environment</p>
+                </div>
+              </div>
+              <div class="info__row">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>
+                <div>
+                  <strong>Safe and Confidential</strong>
+                  <p>This is a safe and confidential space where you can process your traumas and heal.</p>
+                </div>
+              </div>
+              <div class="info__row">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                <div>
+                  <strong>Client Centered</strong>
+                  <p>Therapy is individualized as per the need of each individual. Evidence based modalities such as CBT, IFS, DBT, Mindfullness and Solution Focused Therapy are used to help the client heal and grow.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="info info--cool reveal">
+              <div class="info__head">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/></svg>
+                <h3 class="info__title">What You'll Learn</h3>
+              </div>
+              <ul class="checklist">
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Understanding your emotions, thoughts, and behavioural patterns</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Identifying triggers and learning healthier ways to respond</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Developing practical tools to manage anxiety, stress, and overwhelming emotions</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Building stronger coping and emotional regulation skills</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Recognizing patterns that may contribute to depression, low mood, or feeling stuck</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Processing trauma and difficult past experiences at a pace that feels safe</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Managing stress, fears, and overwhelming emotions</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Creating meaningful changes that support healthier relationships with yourself and others</span></li>
+              </ul>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- Community Programs -->
+        <div class="tabpanel" id="panel-community" role="tabpanel" aria-labelledby="tab-community" hidden>
+
+          <div class="split split--service split--reverse reveal">
+            <div class="split__body">
+              <h2 class="h2-page">Community Programs</h2>
+              <p class="lead">Today's communities are experiencing various barriers and inequities that can impact mental health. We support your community with building knowledge, awareness and skills to manage mental health and create resilience.</p>
+              <p class="lead">We offer workshops for a variety of Mental Health and wellness topics to address Self Care, Managing Stress, Trauma and Recovery, Relationships and Emotional Regulation. Customized workshops are available to meet your community's specific needs.</p>
+              <a class="btn btn--brass btn--lg" href="contact.html">Discuss Community Needs
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div>
+              <img class="rounded-img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&amp;q=80" alt="Community Programs" />
+            </div>
+          </div>
+
+          <div class="grid grid--4 grid--gap-sm">
+            <article class="card card--workshop reveal" style="transition-delay:0s">
+              <div class="tile tile--sm tile--warm">
+                <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+              </div>
+              <h3 class="card__title">Self Care</h3>
+              <p class="card__text">Learn practical self-care strategies and build sustainable wellness routines</p>
+            </article>
+
+            <article class="card card--workshop reveal" style="transition-delay:.1s">
+              <div class="tile tile--sm tile--mint">
+                <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/></svg>
+              </div>
+              <h3 class="card__title">Emotional Regulation</h3>
+              <p class="card__text">Build skills to understand, manage, and respond to emotions in healthy ways</p>
+            </article>
+
+            <article class="card card--workshop reveal" style="transition-delay:.2s">
+              <div class="tile tile--sm tile--deep">
+                <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/></svg>
+              </div>
+              <h3 class="card__title">Managing Stress</h3>
+              <p class="card__text">Develop effective tools for managing stress in daily life and challenging times</p>
+            </article>
+
+            <article class="card card--workshop reveal" style="transition-delay:.3s">
+              <div class="tile tile--sm tile--orange">
+                <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg>
+              </div>
+              <h3 class="card__title">Trauma &amp; Recovery</h3>
+              <p class="card__text">Understand trauma responses and pathways to healing and resilience</p>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- Parental Consultation -->
+        <div class="tabpanel" id="panel-parental" role="tabpanel" aria-labelledby="tab-parental" hidden>
+
+          <div class="split split--service reveal">
+            <div class="split__body">
+              <h2 class="h2-page">Parental Consultation</h2>
+              <p class="lead">Parenting can feel overwhelming, especially when your child is struggling emotionally or behaviourally. Parental consultation offers a supportive space to better understand your child's needs and explore practical ways to support them at home.</p>
+              <div>
+                <p class="split__label">Consultations may help with:</p>
+                <ul class="checklist">
+                  <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Supporting children experiencing anxiety, fears, or low mood</span></li>
+                  <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Managing emotional outbursts and difficult behaviours</span></li>
+                  <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Building stronger parent-child communication</span></li>
+                  <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Setting healthy and consistent boundaries</span></li>
+                </ul>
+              </div>
+              <div class="tags">
+                <span class="tag">Parenting Strategies</span>
+                <span class="tag">Child Behaviour</span>
+                <span class="tag">Co-Parenting</span>
+                <span class="tag">Family Dynamics</span>
+                <span class="tag">Stress Management</span>
+                <span class="tag">Managing Big Emotions</span>
+                <span class="tag">Healthy Communication</span>
+              </div>
+              <a class="btn btn--brass btn--lg" href="contact.html">Book Parental Consultation
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div>
+              <img class="rounded-img" src="https://media.base44.com/images/public/6a3c726082ebc5ae97b9e54c/d55d7b55f_ChatGPT_Image_Aug_23__2026__10_21_53_PM.png" alt="Parental Consultation" />
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Family Psychotherapy -->
+        <div class="tabpanel" id="panel-family" role="tabpanel" aria-labelledby="tab-family" hidden>
+
+          <div class="split split--service reveal">
+            <div class="split__body">
+              <h2 class="h2-page">Family Psychotherapy</h2>
+              <p class="lead">Families can experience periods of stress, conflict, disconnection, or major life changes that affect everyone in the household. Family therapy provides a supportive space where family members can better understand one another, improve communication, and work together toward healthier relationships.</p>
+              <div class="tags">
+                <span class="tag">Communication</span>
+                <span class="tag">Conflict Resolution</span>
+                <span class="tag">Life Transitions</span>
+                <span class="tag">Parent-Child Dynamics</span>
+                <span class="tag">Grief &amp; Loss</span>
+                <span class="tag">Healthy Boundaries</span>
+              </div>
+              <a class="btn btn--brass btn--lg" href="contact.html">Book Family Session
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div>
+              <img class="rounded-img" src="https://media.base44.com/images/public/6a3c726082ebc5ae97b9e54c/7699ce981_ChatGPT_Image_Aug_24__2026__05_38_05_PM.png" alt="Family Psychotherapy" />
+            </div>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="info reveal">
+              <div class="info__head">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                <h3 class="info__title">What to Expect</h3>
+              </div>
+              <div class="info__row">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+                <div>
+                  <strong>Sessions</strong>
+                  <p>60 minutes in length, held in a secure environment</p>
+                </div>
+              </div>
+              <div class="info__row">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                <div>
+                  <strong>Safe Environment</strong>
+                  <p>Confidential and judgment-free space for every family member</p>
+                </div>
+              </div>
+              <div class="info__row">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                <div>
+                  <strong>Collaborative Approach</strong>
+                  <p>Each voice is heard and respected as we work toward shared goals</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="info info--cool reveal">
+              <div class="info__head">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/></svg>
+                <h3 class="info__title">What You'll Learn</h3>
+              </div>
+              <ul class="checklist">
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Improve communication and active listening between family members</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Resolve conflict with empathy and understanding</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Navigate life transitions and changes together</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Strengthen trust and emotional connection</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Develop healthy boundaries within the family system</span></li>
+                <li><svg class="ico ico--check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Build resilience as a family unit</span></li>
+              </ul>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="cta__glow cta__glow--left"></div>
+    <div class="cta__glow cta__glow--right"></div>
+    <div class="cta__inner wrap reveal">
+      <h2 class="cta__title">Ready to Get Started?</h2>
+      <p class="cta__text">Taking care of your mental health takes courage. Contact us today for a free 15 minute consultation.</p>
+      <a class="btn btn--light btn--lg" href="contact.html">
+        <span class="hide-sm">Book Free Consultation</span>
+        <span class="show-sm">Book Now</span>
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img src="https://media.base44.com/images/public/6a3c726082ebc5ae97b9e54c/86b9ad87b_WhatsAppImage2026-06-24at81843PM.jpeg" alt="Heart To Soul Psychotherapy logo" />
+          <div>
+            <h3>Heart to Soul Psychotherapy</h3>
+            <p>Mental Health &amp; Wellness</p>
+          </div>
+        </div>
+        <p class="footer__about">Empowering individuals, families and communities with practical mental health support.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="fees.html">Fees</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4>Contact Info</h4>
+        <div class="footer__contact">
+          <a href="mailto:s.beenishjalil@gmail.com">s.beenishjalil@gmail.com</a>
+          <a href="tel:+14166880131">(416) 688 0131</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Heart To Soul Psychotherapy. OCN/BIN 100816670. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
